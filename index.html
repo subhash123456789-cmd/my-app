@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Static Web App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f2f2f2;
+      color: #333;
+    }
+    header {
+      background: #4caf50;
+      color: white;
+      padding: 1em;
+      text-align: center;
+    }
+    main {
+      padding: 2em;
+      text-align: center;
+    }
+    button {
+      padding: 0.5em 1em;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Static Web App</h1>
+  </header>
+  <main>
+    <p>This is a simple static web application.</p>
+    <button onclick="showMessage()">Click Me</button>
+    <p id="message"></p>
+  </main>
+
+  <script>
+    function showMessage() {
+      const message = document.getElementById('message');
+      message.textContent = "You clicked the button!";
+    }
+  </script>
+</body>
+</html>
